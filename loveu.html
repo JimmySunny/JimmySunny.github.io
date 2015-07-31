@@ -1,0 +1,293 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="Keywords" content="blog"/>
+    <meta name="Description" content="blog"/>
+    <title>Simple</title>
+    <link rel="shortcut icon" href="/static/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="/main.css" />
+</head>
+<body>
+<div class="main">
+    <div class="header">
+    	<ul id="pages">
+            <li><a href="/">home</a></li>
+            <li><a href="/#/tags">tags</a></li>
+            <li><a href="/#/archive">archive</a></li>
+    	</ul>
+    </div>
+	<div class="wrap-header">
+	<h1>
+    <a href="/" id="title"></a>
+	</h1>
+	</div>
+<div id="md" style="display: none;">
+<!-- markdown -->
+# 鑫苑Android v0.8.0测试报告
+
+> 针对2015.7.31号的发布包
+
+## 桌面
+
+1. App的Icon，图标需要制作
+
+## 设置
+
+1. *自动登录*，应当放到**登录**页面
+2. *清除缓存*，未生效
+3. *关于*，应该弹窗显示
+4. 增加*检查最新版本*
+
+## 登录
+
+1. 输入了错误的*账号*或*密码*，点击*登录*后显示”网络请求Json格式有误”，需要换成”账号或者密码错误，请重试"
+2. 公司logo后台更换后，安卓端显示的图片能否采用填充的方式，按照默认图的长宽填满
+3. 公司logo后台更换后，先显示默认图并一闪而过，再显示服务器图
+4. 需要换成鑫苑要求样式，然而给的效果图配色差异太大，无法参考
+
+## 侧边栏
+
+1. 显示*置业顾问*和*案场经理*所对应的权限反了，*置业顾问*能看到**销售分析**，*案场经理*能看到**案场监控**
+2. *我的消息*，未生效
+3. *我的消息*，需要显示红点
+4. *注销账户*，未生效
+5. *项目切换*后，有时候选中的项目排序会乱掉，建议按照字母顺序排列固定下来；换成单选框
+
+## 导航栏
+
+1. *代办*、*客户*、*报表*，的图标需要更换
+
+## 楼盘
+
+1. Title，从"楼盘信息”修改为”楼盘"
+2. *轮播图*，*项目切换*后，如果是没有轮播图的项目切换到有轮播图的项目，能看到图，反之看不到
+3. *楼盘信息*，需要按照完整的后台分类分块显示，并且在配套说明提供右箭头，点击能看到明细
+4. *楼盘信息*，当选择诸如”未来城”这样刚从ERP获取并未填写其它字段的，显示”出错了，点击重试"以及”网络请求Json格式有误"
+5. *主推户型*，”A3"的位置需要显示编号不能写成固定值
+6. 主推户型，点击某个户型进入的预览页面，首先显示系统默认图标并一闪而过，然后显示预览图
+7. *效果图*，首先显示系统默认图标并一闪而过，然后显示预览图
+8. *效果图*，户型图Tab放到第一个并不排除，显示主推户型，并且在*房屋查询*中的房间可以点击户型图跳转对应的Tab下面
+9. *房贷计算器*，Tab的大小尽量与原生的一致
+10. *房贷计算器*，需要提供具体的计算公式让客户确认正误
+11. *销售文档*，new的图标需要添加
+12. *销售文档*，下载总是无限循环，有异常
+13. *房屋查询*，*高级筛选*下面的价格区间和楼层区间均未生效
+14. *房屋查询*，楼栋、单元、户型、面积，以及各数据的级联均为假数据，需要建新造数据
+15. *房屋查询*，房间户型值为空，总价的单位换算成万元
+16. *房屋查询*，房间基本信息需要增加一个按钮，户型图，点击后跳转到效果图户型图Tab
+17. *房屋查询*，高级筛选的图标需要新增
+18. *房屋查询*，按照楼层号码从上到下排序
+19. *房屋查询*，筛选条件选中后应该显示选中值
+
+## 代办
+
+1. *性别*、*短信*、*电话*、*次数*、字体颜色、意向程度，三角型，均缺少图标
+2. 点击客户进入客户明细页面
+3. 找建新提供真实数据
+4. *逾期跟进*，逾期认购下改为预约日期，天数；逾期签约下改为认购日期，天数
+
+## 客户
+
+1. 与代办中类似的图标提供，另外补充*查询*、*高级筛选*的图标
+2. 找建新提供真实数据
+3. *快速添加*，点击保存后"网络请求数据有误”
+4. *快速添加*，下次跟进日期是日期类型
+5. *基本信息*，性别，字体颜色，图标需要增加
+6. *销售记录*，内容前面的图片需要添加
+7. *增加跟进记录*，下次跟进日期是日期属性
+
+## 销售分析
+
+1. 点击选择日期，app自动停止
+2. 灰色和白色的位置是反的
+3. 找建新提供真实数据
+
+## 案场监控
+
+1. 找建新提供真实数据
+2. 梯形图标重绘，其它图标重绘
+3. 完成其它部分
+
+<!-- markdown end -->
+</div>
+<div class="entry" id="main">
+<!-- content -->
+<h1 id="androidv080">鑫苑Android v0.8.0测试报告</h1>
+
+<blockquote>
+  <p>针对2015.7.31号的发布包</p>
+</blockquote>
+
+<h2 id="">桌面</h2>
+
+<ol>
+<li>App的Icon，图标需要制作</li>
+</ol>
+
+<h2 id="">设置</h2>
+
+<ol>
+<li><em>自动登录</em>，应当放到<strong>登录</strong>页面</li>
+<li><em>清除缓存</em>，未生效</li>
+<li><em>关于</em>，应该弹窗显示</li>
+<li>增加<em>检查最新版本</em></li>
+</ol>
+
+<h2 id="">登录</h2>
+
+<ol>
+<li>输入了错误的<em>账号</em>或<em>密码</em>，点击<em>登录</em>后显示”网络请求Json格式有误”，需要换成”账号或者密码错误，请重试"</li>
+<li>公司logo后台更换后，安卓端显示的图片能否采用填充的方式，按照默认图的长宽填满</li>
+<li>公司logo后台更换后，先显示默认图并一闪而过，再显示服务器图</li>
+<li>需要换成鑫苑要求样式，然而给的效果图配色差异太大，无法参考</li>
+</ol>
+
+<h2 id="">侧边栏</h2>
+
+<ol>
+<li>显示<em>置业顾问</em>和<em>案场经理</em>所对应的权限反了，<em>置业顾问</em>能看到<strong>销售分析</strong>，<em>案场经理</em>能看到<strong>案场监控</strong></li>
+<li><em>我的消息</em>，未生效</li>
+<li><em>我的消息</em>，需要显示红点</li>
+<li><em>注销账户</em>，未生效</li>
+<li><em>项目切换</em>后，有时候选中的项目排序会乱掉，建议按照字母顺序排列固定下来；换成单选框</li>
+</ol>
+
+<h2 id="">导航栏</h2>
+
+<ol>
+<li><em>代办</em>、<em>客户</em>、<em>报表</em>，的图标需要更换</li>
+</ol>
+
+<h2 id="">楼盘</h2>
+
+<ol>
+<li>Title，从"楼盘信息”修改为”楼盘"</li>
+<li><em>轮播图</em>，<em>项目切换</em>后，如果是没有轮播图的项目切换到有轮播图的项目，能看到图，反之看不到</li>
+<li><em>楼盘信息</em>，需要按照完整的后台分类分块显示，并且在配套说明提供右箭头，点击能看到明细</li>
+<li><em>楼盘信息</em>，当选择诸如”未来城”这样刚从ERP获取并未填写其它字段的，显示”出错了，点击重试"以及”网络请求Json格式有误"</li>
+<li><em>主推户型</em>，”A3"的位置需要显示编号不能写成固定值</li>
+<li>主推户型，点击某个户型进入的预览页面，首先显示系统默认图标并一闪而过，然后显示预览图</li>
+<li><em>效果图</em>，首先显示系统默认图标并一闪而过，然后显示预览图</li>
+<li><em>效果图</em>，户型图Tab放到第一个并不排除，显示主推户型，并且在<em>房屋查询</em>中的房间可以点击户型图跳转对应的Tab下面</li>
+<li><em>房贷计算器</em>，Tab的大小尽量与原生的一致</li>
+<li><em>房贷计算器</em>，需要提供具体的计算公式让客户确认正误</li>
+<li><em>销售文档</em>，new的图标需要添加</li>
+<li><em>销售文档</em>，下载总是无限循环，有异常</li>
+<li><em>房屋查询</em>，<em>高级筛选</em>下面的价格区间和楼层区间均未生效</li>
+<li><em>房屋查询</em>，楼栋、单元、户型、面积，以及各数据的级联均为假数据，需要建新造数据</li>
+<li><em>房屋查询</em>，房间户型值为空，总价的单位换算成万元</li>
+<li><em>房屋查询</em>，房间基本信息需要增加一个按钮，户型图，点击后跳转到效果图户型图Tab</li>
+<li><em>房屋查询</em>，高级筛选的图标需要新增</li>
+<li><em>房屋查询</em>，按照楼层号码从上到下排序</li>
+<li><em>房屋查询</em>，筛选条件选中后应该显示选中值</li>
+</ol>
+
+<h2 id="">代办</h2>
+
+<ol>
+<li><em>性别</em>、<em>短信</em>、<em>电话</em>、<em>次数</em>、字体颜色、意向程度，三角型，均缺少图标</li>
+<li>点击客户进入客户明细页面</li>
+<li>找建新提供真实数据</li>
+<li><em>逾期跟进</em>，逾期认购下改为预约日期，天数；逾期签约下改为认购日期，天数</li>
+</ol>
+
+<h2 id="">客户</h2>
+
+<ol>
+<li>与代办中类似的图标提供，另外补充<em>查询</em>、<em>高级筛选</em>的图标</li>
+<li>找建新提供真实数据</li>
+<li><em>快速添加</em>，点击保存后"网络请求数据有误”</li>
+<li><em>快速添加</em>，下次跟进日期是日期类型</li>
+<li><em>基本信息</em>，性别，字体颜色，图标需要增加</li>
+<li><em>销售记录</em>，内容前面的图片需要添加</li>
+<li><em>增加跟进记录</em>，下次跟进日期是日期属性</li>
+</ol>
+
+<h2 id="">销售分析</h2>
+
+<ol>
+<li>点击选择日期，app自动停止</li>
+<li>灰色和白色的位置是反的</li>
+<li>找建新提供真实数据</li>
+</ol>
+
+<h2 id="">案场监控</h2>
+
+<ol>
+<li>找建新提供真实数据</li>
+<li>梯形图标重绘，其它图标重绘</li>
+<li>完成其它部分</li>
+</ol>
+<!-- content end -->
+</div>
+<br>
+<br>
+    <div id="disqus_thread"></div>
+	<div class="footer">
+		<p>© Copyright 2014 by isnowfy, Designed by isnowfy</p>
+	</div>
+</div>
+<script src="main.js"></script>
+<script id="content" type="text/mustache">
+    <h1>{{title}}</h1>
+    <div class="tag">
+    {{date}}
+    {{#tags}}
+    <a href="/#/tag/{{name}}">#{{name}}</a>
+    {{/tags}}
+    </div>
+</script>
+<script id="pagesTemplate" type="text/mustache">
+    {{#pages}}
+    <li>
+        <a href="{{path}}">{{title}}</a>
+    </li>
+    {{/pages}}
+</script>
+<script>
+$(document).ready(function() {
+    $.ajax({
+        url: "main.json",
+        type: "GET",
+        dataType: "json",
+        success: function(data) {
+            $("#title").html(data.name);
+            var pagesTemplate = Hogan.compile($("#pagesTemplate").html());
+            var pagesHtml = pagesTemplate.render({"pages": data.pages});
+            $("#pages").append(pagesHtml);
+            //path
+            var path = "loveu.html";
+            //path end
+            var now = 0;
+            for (var i = 0; i < data.posts.length; ++i)
+                if (path == data.posts[i].path)
+                    now = i;
+            var post = data.posts[now];
+            var tmp = post.tags.split(" ");
+            var tags = [];
+            for (var i = 0; i < tmp.length; ++i)
+                if (tmp[i].length > 0)
+                    tags.push({"name": tmp[i]});
+            var contentTemplate = Hogan.compile($("#content").html());
+            var contentHtml = contentTemplate.render({"title": post.title, "tags": tags, "date": post.date});
+            $("#main").prepend(contentHtml);
+            if (data.disqus_shortname.length > 0) {
+                var disqus_shortname = data.disqus_shortname;
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            }
+        }
+    });
+});
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ["\\(", "\\)"]], processEscapes: true}});
+</script>
+</body>
+</html>
